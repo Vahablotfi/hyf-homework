@@ -1,0 +1,74 @@
+body{
+    background-color:#FEF1E6;
+}
+
+header{ 
+    background-color:#90AACB;
+margin: 10px;
+border-radius: 20px;
+width: 600px;
+    height: 150px;
+    overflow: auto;
+}
+
+img{
+ 
+    width: 120px;
+    position: absolute;
+    top: 12px;
+    right:20px;
+    border-radius: 20px; 
+}
+
+.c-info{
+    margin-left: 10px;
+    padding: 1px;
+    
+
+}
+.p-info{
+    width: 600px;
+    height: 150px;
+    background-color: #F9D5A7;
+    margin: 10px;
+border-radius: 20px;
+  margin-left: 10px;
+    padding: 1px;
+    overflow-x: auto;
+}
+main,:first-child,p{
+    margin-left: 10px;
+}
+
+.education{
+    background-color: #FFB085;
+    margin: 10px;
+border-radius: 20px;
+width: 600px;
+    height: 150px;
+    overflow-x: auto;
+
+}
+.experiences{
+    background-color:wheat;
+    margin: 10px;
+    border-radius: 20px;
+    width: 600px;
+    height: 150px;
+    overflow-x: auto;
+}
+.resources{
+    background-color:#FFDAC7;
+    margin: 10px;
+    border-radius: 20px;
+    width: 600px;
+    height: 150px;
+}
+.date{
+    color: rgb(161, 42, 12);
+    font-weight: bold;
+}
+h2{
+    text-decoration: underline;
+}
+
