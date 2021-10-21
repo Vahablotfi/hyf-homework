@@ -1,0 +1,91 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+       list-style: none;
+}
+
+.top-nav{
+    background-color: silver;
+}
+.logo{
+    padding: 5%;
+}
+.navigation{
+    padding: 5%;
+    width: 20%;   
+}
+progress {
+    width: 90%;
+    height: 3em;
+    border-radius: 0%;
+    margin: 0%;
+}
+.name-info{
+    width: 90%;
+    height: 2em;
+    display: flex;
+    margin: 1em;
+}
+#first-name{
+    width: 30%;
+    margin-left: 1em;
+    margin-right: 0;
+}
+#lastname{
+    width: 30%;
+    margin-left: 1em;
+    margin-right: 0;
+}
+.country{
+    width: 90%;
+    height: 2em;
+    display: flex;
+    margin: 1em;
+}
+#country{
+    width: 30%;
+    margin-left: 2.3em; 
+
+}
+.address{
+    width: 90%;
+    height: 2em;
+    display: flex;
+    margin: 0.5em;
+}
+#adress{
+    width: 30%;
+    margin-right: 0;
+}
+#post-code{
+    width: 30%;
+    margin-left: 1em;
+    margin-right: 0;
+}
+.msg-field{
+    margin: 1em;
+}
+.msg-box{
+    display: flex;
+}
+.short-description{
+    font-size: 0.8em;
+    font-family:monospace;
+    width: 15%;
+    margin-top: 3em;
+  
+}
+#msg{
+    width: 55%;
+    margin-left: 2%;
+    resize: vertical;
+}
+button{
+    width: 100%;
+    height: 5em;
+}
+.button-list{
+    width: 20%;
+    margin-right: 10%;
+   
+}

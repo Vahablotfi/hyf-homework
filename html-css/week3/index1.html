@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="payment-form.css" rel="stylesheet">
+    <title>form</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="top-nav logo">Logo</li>
+          <li class="top-nav navigation">Navigation</li>
+        </ul>
+      </nav>
+      <h1>Sign up to yourcustomtailor.com</h1>
+      <p>We can't wait to help you improve your life-style and gain the attention from people around<br> you!</p>
+      <p>Sign up below to save up 70% on apparel, hand-bags and cosmetic. Our agents are busy<br>picking the best offers that match your preferences and style. Every week we will send you a<br>hand-picked selection-we just need to know a few details about your first...</p>
+      <h1>Step 1/4 -tell us who you are?</h1>
+
+    </header>
+    <section class="progress-bar">
+      <progress id="progress-bar" max="100" value="25">25%</progress>
+    </section>
+    <p>Nice to meet you. Let's spend a minute to get to know each other? Please enter the following:</p>
+    <section class="info">
+      <form action="/index.html" method="get">
+      <div class="name-info">
+        <label for="first-name">First name<strong>*</strong></label>
+        <input type="text" id="first-name" name="username" required>
+        <label for="lastname">Last name<strong>*</strong></label>
+        <input type="text" id="lastname" name="lastname" required>
+      </div>
+      <div class="country">
+        <label for="country">country<strong>*</strong></label>
+        <select name="country" id="country" required>
+          <option value="empty"></option>
+          <option value="Denmark">Denmark</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Norway">Norway</option>
+        </select>
+      </div>
+      <div class="address">
+        <label for="adress">Street address<strong>*</strong></label>
+        <input type="text" id="adress" name="adress" required>
+        <label for="post-code">Post code<strong>*</strong></label>
+        <input type="nember" id="post-code" name="post-code" required>
+      </div>
+      <div class="msg-field">
+        <label for="msg">Profile description</label>
+        <div class="msg-box">
+        <p class="short-description">Please provide a short description of yourself to be displayed on our social media pages.</p>
+        <textarea id="msg" name="profile-description"></textarea>
+      </div>
+      </div>
+      <p>Use the same address for billing and shipping? Unchek below to fill out a seperate shipping address.</p>
+
+      </form>
+      <ul>
+        <li>
+          <label for="shipping address">Shipping address</label>
+          <input type="checkbox" id="shipping address" name="shipping address" checked>
+        </li>
+        <li class="button-list">
+          <a href="file:///Users/hyf/Desktop/my%20assignments/week%203%20page02/index2.html">
+          <button type="next"> Next step</button></a>
+        </li>
+      </ul>
+      
+    
+    </section>
+
+  
+  </body>
+</html>
