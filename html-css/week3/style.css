@@ -4,75 +4,60 @@
     list-style: none;
 }
 .logo{
-    background-color:silver;
+    background-color: silver;
     padding: 5%;
-
 }
 .navigation{
     background-color: silver;
     padding: 5%;
+}
+
+.for-accesories{
+    width: 50%;
+    height: 15em;
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 2%;
+    margin-left: 10%;
+    
+   
+   
+}
+.foraccesories, .for-apparal, .for-shoes, .for-handbags, .for-jewelry{
+width: 40%;
+}
+ 
+
+img{
+    width: 80%;
+}
+.img-container{ 
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-box{
+    margin: 1%;
+    padding: 1%;
     width: 20%;
+    justify-content: flex-start;
 }
 
 #progress-bar{
     width: 90%;
-    height: 4em;
     border-radius: 0%;
-
-}
-.info{
-   
-    margin-top: 1.5em;
-    margin-left: 7em;
-}
-#email{
-    width: 20%;
-    height: 2em;
-
-}
-#phone{
-    width: 20%;
-    height: 2em;
-
-}
-.for-phone{
-    margin-left: 2em; ;
-}
-.password-box{
-    margin-top: 2em;
-    margin-left: 5.5em;
-}
-#password{
-    width: 20%;
-    height: 2em;
-}
-.reenter-password{
-    margin: 2em;
-
-}
-#re-password{
-    width: 20%;
-    height: 2em;
-}
-.buttons{
-    margin: 2em;
-    display: flex;
-}
-
-.for-monthly{
-    margin-left: 2em;
-}
-.for-nonews{
-    margin-left: 2em;
+    height: 3em;
 }
 
 button{
-    width: 20%;
-    height: 5em;
-    margin-top: 10em;
-    margin-left: 70%;
-  background-color: silver;
-  
-
-    
+    width: 25%;
+    padding: 2%;
+    background-color: silver;
+    font-size: 1rem;
+    margin-left: 75%;
 }
+
+
+
+
+
+
