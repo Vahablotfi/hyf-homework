@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link  href="style.css" rel="stylesheet">
+    <title>form02</title>
+</head>
+<body>
+    <ul class="nav-bar">
+        <li class="logo">Logo</li>
+        <li class="navigation">Navigation</li>
+    </ul>
+    <h1>Sign up to your customtailor.comcustomtailor</h1>
+    <h2> Step 2/4-how can we reach you?</h2>
+    <h4>progress</h4>
+    <progress id="progress-bar" max="100" value="50"></progress>
+    <p>We will probably stay in touch somehow. Let us know how we can reach you?</p>
+    <form>
+        <div class="info">
+            <label class="for-email" for="email">Email<strong>*</strong></label>
+            <input type="email" id="email" name="email" required>
+            <label class="for-phone" for="phone">Phone<strong>*</strong></label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="password-box">
+        <label for="password">Password<strong>*</strong></label>
+        <input type="password" id="password" name="password" minlength="10" pattern="[A-Z a-z\d\.]" title="Password must contain at least one capital letter and minimum 10 characters" required>
+        </div>
+        <div class="reenter-password">
+        <label for="re-password">Re-enter Password<strong>*</strong></label>
+        <input type="re-password" id="re-password" name="password" minlength="10" pattern="[A-Z a-z\d\.]" title="Password must contain at least one capital letter and minimum 10 characters" required>
+    </div>
+    <p>I want to sign up for the newsletter</p>
+    <div class="buttons">
+        <div class="for-weekly">
+        <label for="weekly">Weekly news</label>
+        <input type="radio" id="weekly" name="newsletter" checked>
+    </div>
+    <div class="for-monthly">
+        <label for="monthly">Monthly news</label>
+        <input type="radio" id="monthly" name="newsletter">
+    </div>
+    <div class="for-nonews">
+        <label for="no-news">Don't send me news</label>
+        <input type="radio" id="no-news" name="newsletter">
+    </div>
+    </div>
+    <div class="for-button">
+    <button type="next">Next step</button>
+    </div>
+    </form>
+</body>
+</html>
