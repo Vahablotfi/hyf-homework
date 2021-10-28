@@ -14,5 +14,25 @@ if(shouldShowResultInDogYears != 70){
 } else {
     console.log("Your dog will be",dogYear,"dog years old in",dogYearFuture )
 }
+//Housey pricey (A house price estimator)
+//Peter's house
+const width = 8;
+const depth = 10;
+const height =10;
+const  garden = 100;
+const peterHousePrice = width * depth *  height * 2.5 * 1000 + garden *300; 
+const pricePeterPaid = "2.5 million";
+console.log(peterHousePrice)
+console.log("peter have paid ",pricePeterPaid," for a house which costs",peterHousePrice, ".")
+//Julia's House
+const juliawidth = 5;
+const juliadepth = 11;
+const juliaheight =8;
+const  juliagarden = 70;
+const juliaHousePrice = juliawidth * juliadepth *  juliaheight * 2.5 * 1000 + juliagarden *300; 
+const sellsPrice = 1000000;
+console.log(juliaHousePrice)
+console.log("Julia wants to pay ",sellsPrice," for a house which costs",juliaHousePrice,"." )
+
 
 
