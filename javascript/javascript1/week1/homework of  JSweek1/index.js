@@ -34,5 +34,16 @@ const sellsPrice = 1000000;
 console.log(juliaHousePrice)
 console.log("Julia wants to pay ",sellsPrice," for a house which costs",juliaHousePrice,"." )
 
-
+//Ez Namey 
+const firstWords=["cute","simple","complicated","sustainable","freaky","dodgy","green","worthy","unique","shiny"]
+const secondWords=["helpers","solution","creators","methods","offers","way","makers","colleague","builders","holders"]
+const randomNumber = Math.floor(Math.random() * 10);
+const firstRandomName= firstWords[Math.floor(Math.random() * 10)]
+const secondRandomName=secondWords[Math.floor(Math.random() * 10)]
+const  startupName = firstRandomName +" "+ secondRandomName;
+// THIS IS THE START UP NAME
+console.log(startupName )
+const nameLength = startupName.length;
+console.log(nameLength)
+console.log("The start up ",'"',startupName,'"'," contains ",nameLength, " characters.")
 
