@@ -8,6 +8,9 @@
 </head>
 <body>
     <script>
+
+
+//Formal fullname
     function getFullname(firstname, surname,useFormalName, gender){
     const fullName1= firstname + " "+ surname;
     if (firstname == "" || surname == ""){
@@ -26,7 +29,19 @@
     console.log(answer);
 
 
+//Event application
+const weekDaysArr = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+const dateToday = new Date();
+const theDay = dateToday.getDate();
 
+console.log(dateToday);
+console.log(theDay);
+    function getEventWeekDay(num){
+       const eventDay = weekDaysArr[num%7];
+       return eventDay;
+    }
+    console.log(getEventWeekDay(3));
+    
     
     </script>    
 </body>
