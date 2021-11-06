@@ -41,6 +41,22 @@ console.log(theDay);
        return eventDay;
     }
     console.log(getEventWeekDay(3));
+
+    //Weather wear
+const summerOutfit = "shorts and T-shirts";
+const springOutfit = "Trousers and sweater";
+const winterOutfit = "Trousers-Jacket and Boots";
+
+function tellMeWhatToWear(temp){
+    if(temp<10){
+        return winterOutfit;
+    }else if(temp=10 && temp<20){
+        return springOutfit;
+    }else{
+        return summerOutfit;
+    }
+}
+console.log(tellMeWhatToWear(23));
     
     
     </script>    
