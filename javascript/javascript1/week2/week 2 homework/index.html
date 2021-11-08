@@ -57,9 +57,51 @@ function tellMeWhatToWear(temp){
     }
 }
 console.log(tellMeWhatToWear(23));
-    
-    
-    </script>    
+
+//Student manager
+
+
+const class07Students = [];
+function addStudentToClass(studentName) {
+  // You write code here
+for (i=0; i<=6; i++){
+    if(class07Students.length>=6 && studentName !== "Queen"){
+        if(class07Students.includes(studentName)){
+            console.log('student '+studentName+' is already in the class')
+        }else { 
+            console.log( "Cannot add more students to class 07")
+        } break
+    } return  class07Students.push(studentName);
+}
+
+}
+
+
+addStudentToClass("sara");
+addStudentToClass("Mohammad");
+addStudentToClass("ABDI");
+addStudentToClass("Sofie");
+addStudentToClass("Nikolaj");
+addStudentToClass("LUKAS");
+addStudentToClass("ANgela");
+addStudentToClass("LUKAS");
+addStudentToClass("Yasin");
+addStudentToClass("Queen");
+addStudentToClass("ABDI");
+addStudentToClass("Kevin");
+addStudentToClass("Maks");
+console.log(class07Students);
+
+
+
+function getNumberOfStudents(vName) {
+  // You write code here
+   return vName.length;
+}
+  console.log(getNumberOfStudents(class07Students));
+  
+       
+  </script>    
 </body>
 
 </html>
