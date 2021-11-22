@@ -33,6 +33,96 @@ console.log(names);
 
 //When will we be there??
 
-    </script>
+const travelInformation = {
+  speed: 50,
+  destinationDistance: 432,
+};
+
+function getTravelTime(speed,distance){
+// declariong a variable which gives us the 
+const getTime = (distance/speed); // 8.64 in this case 
+
+// declaring avariable to get integer part ( hours) 
+const integer = Math.trunc(getTime); // in this case 8 hours 
+
+//declaring a variabe to convert decimal number (0.64) to munutes 
+const decimal = ((getTime *60)%60).toFixed();// in this case 38.4. which was rounded to 34 by .toFix() .
+
+// function outcome  
+return integer +" hours and "+decimal +" minutes."; 
+} 
+// logging our function using 
+console.log(getTravelTime(travelInformation.speed,travelInformation.destinationDistance));
+
+
+//Series duration of my life
+const seriesDurations = [
+  {
+    title: "twin peaks ",
+    days: 1,
+    hours: 12,
+    minutes: 48,
+  },
+  {
+    title: "westworld",
+    days: 1,
+    hours: 4,
+    minutes: 0,
+  },
+  {
+    title: "mr.Robot",
+    days: 1,
+    hours: 8,
+    minutes: 15,
+  },
+];
+// declaring a variable for the time that spent on all the series
+const allSeriesDuration = {
+    title: "all Series",
+    days: 4,
+    hours: 1,
+    minutes: 3,
+}
+
+// calculating minuts of  80 year
+const lifeInMinutes = 24 * 60 * 365 * 80;// output is 42048000 minutes 
+
+//writing a help function to get every series duration in minutes
+function seriesInMinute(series){
+  const seriesMinutes = ((series.days*24)+(series.hours))*60 + series.minutes;
+  return seriesMinutes;
+}
+
+//declaring a variable to sum up durations
+let totalDuration=0;
+
+//using for..of loop to get acces to every object in arrey
+for( properties of seriesDurations){
+ 
+
+  //declaring a variable and initiating it with help function to get everyseries duration in minutes 
+  let timer = seriesInMinute(properties);
+
+  //using series duration in minutes to calculate how much of 80 years they took 
+ let answer = ((timer/lifeInMinutes).toFixed(5))*100;
+
+ //adding duration of each series to our totalDuratin variable
+ totalDuration +=answer;
+ 
+ 
+ // logging the result out 
+  console.log(properties.title+" took "+answer+" of my life.");
+  //twin peaks  took 0.005 of my life.
+// westworld took 0.004 of my life.
+ //mr.Robot took 0.005 of my life.
+ 
+}
+
+//logging total amout of time spent on tv in 80 years
+console.log(totalDuration.toFixed(4))
+console.log("In total watching tv took "+totalDuration.toFixed(4)+" of my life.");
+
+
+   </script>
 </body>
 </html>
