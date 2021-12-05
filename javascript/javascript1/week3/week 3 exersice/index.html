@@ -123,6 +123,43 @@ console.log(totalDuration.toFixed(4))
 console.log("In total watching tv took "+totalDuration.toFixed(4)+" of my life.");
 
 
+
+//Save a note
+
+// declaring a variable and assigning it to an empty arrey
+ const notes =[];
+
+ //cretaing function with two parameters to save our notes in arrey
+ function saveNotes( id, content){
+     notes.push({[id]: content})
+ }
+ saveNotes(1,"pick up groceries")
+ saveNotes(2,"Do Laundry")
+ console.log(notes);
+
+// we create a function to recive id and show the content, and show erorr if id is not existed 
+// try to use for each loop metode
+
+
+
+const arreyValues =Object.values(notes);
+//console.log(arreyValues)
+
+function getNote(id) {
+ for ( let properties of notes){
+   if (properties.hasOwnProperty(id)== true){
+     return properties
+   }else{
+       return "Erorr!! the "+[id]+" is not existed in your list."
+   }
+ }
+ 
+}
+
+
+const firstNote = getNote(2);
+console.log(firstNote ); // {content: 'Pick up groceries', id: 1}
+
    </script>
 </body>
 </html>
