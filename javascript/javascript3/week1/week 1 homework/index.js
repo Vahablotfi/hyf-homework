@@ -28,6 +28,8 @@ btn.addEventListener('click',function(event){
     })
 })
 
-//4- fetch function inside the add event
 
-//5- use promises
+ 
+    
+
+
