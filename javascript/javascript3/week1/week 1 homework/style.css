@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    background-image: url('https://source.unsplash.com/random/landscape');
+}
+
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    font-size: 120%;
+}
+#input-name{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    height: 10px;
+    border: none;
+    border-radius: 10%;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    font-size: 120%;
+}
+#submit{
+    height: 3em;
+    margin: 1em;
+    border-radius: 20%;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+}
