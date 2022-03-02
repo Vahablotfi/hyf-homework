@@ -4,5 +4,17 @@
     "name": "Benjamin Hughes",
     "email": "benjamin@hughes.dk",
     "mealId": 1
+  },
+  {
+      "id": 2,
+      "name": "Vahab Lotfi",
+      "email": "vaha@vaha.com",
+      "mealId": 3
+  },
+  {
+      "id": 3,
+      "name": "Bamba",
+      "email": "Abdolaya@bamba.dk",
+      "mealId": 3
   }
 ]
