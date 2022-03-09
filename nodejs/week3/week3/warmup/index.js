@@ -9,16 +9,22 @@ app.get("/", (req, res) => res.send("nodejs week3 homework"));
 app.get("/calculator/multiply", (req, res) => {
    
     const firstNumber= Number(req.query.firstParam);
-    const secondNumber=Number(req.query.secondParam);
-    const thirdNumber =Number(req.query.thirdParam);
-    if(thirdNumber){
-        const result1=firstNumber * secondNumber * thirdNumber;
+    const secondParam=req.query.secondParam;
+   
+    
+    if(typeof(secondParam) === 'object'){
+       
+        const secondParamArray=secondParam.reduce( function (previous,current) {
+         return Number(previous)*Number(current)});
+        
+         const result1=firstNumber * secondParamArray;
         res.json(`The answer for your request is ${result1}`);
     }else{
+        const secondNumber=Number(req.query.secondParam);
         const result =firstNumber * secondNumber;
-    res.json(`The answer for your request is ${result}`);
-    }
-    
+        res.json(`The answer for your request is ${result}`);
+    }   
+   
 });
 
 app.get("/calculator/add", (req, res) => {
