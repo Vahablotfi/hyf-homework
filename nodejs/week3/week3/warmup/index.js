@@ -22,7 +22,7 @@ app.get("/calculator/multiply", (req, res) => {
     }else{
         const secondNumber=Number(req.query.secondParam);
         const result =firstNumber * secondNumber;
-        res.json(`The answer for your request is ${result}`);
+        res.send(`The answer for your request is ${result}`);
     }   
    
 });
