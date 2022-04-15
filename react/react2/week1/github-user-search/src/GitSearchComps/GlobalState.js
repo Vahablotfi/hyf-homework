@@ -12,13 +12,9 @@ there is two place to catch error first one if the database response code is not
 and second one is in case that we don't get any result back from data base. 
 */
 
-
 import React, { useState, useEffect } from 'react'
 
-
 export const GlobalContext = React.createContext( )
-
-
 
 export const GlobalProvider = ({ children }) => {
    const [input,setInput]=useState('')
@@ -53,9 +49,7 @@ export const GlobalProvider = ({ children }) => {
           const data = response.json();
           return data;
         })
-          
-        
-              .then(data => {
+         .then(data => {
                 if (data.total_count === 0) {
                   setUsers({
                     ...users,
