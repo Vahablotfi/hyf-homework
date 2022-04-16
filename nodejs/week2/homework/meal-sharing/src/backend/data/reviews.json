@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "numberOfStars": 3,
+      "content": "Best meal ever",
+      "mealId": 1,
+      "createdAt": "2019-12-20 22:34" 
+    },
+    {
+        "id": 2,
+      "numberOfStars": 5,
+      "content": "very good ramen , freshly made and good portion",
+      "mealId": 3,
+      "createdAt": "2020-02-05 07:05"
+    },
+    {
+        "id": 3,
+      "numberOfStars": 4,
+      "content": "good indian food",
+      "mealId": 1,
+      "createdAt": "2019-12-20  17:43"
+    }
+  ]
