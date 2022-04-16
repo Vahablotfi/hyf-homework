@@ -15,6 +15,7 @@ CREATE TABLE `Meal` (
 
 INSERT INTO Meal(title,description,location,Hosting_time,max_reservations,price,created_date)
 Values('crispy cheesy shrimp tacos','crispy cheesy shrimp tacos and homemade salsa naranja'     ,'Mexico City','2022-08-10 17:30:20',50,80,'2022-07-20'),
+
        ('Handmade Pasta','Homemade tagliatelle with a simple ragu (sauce)-
 Panna cotta','Florence, Italy','2021-09-07 11:30:14',25,120,'2021-08-23'),
 		('paella','Traditional Valencian paella',' Almeria, Spain ','2021-02-24 18:20:45',
@@ -215,9 +216,15 @@ SELECT*
  FROM Meal
  WHERE price <50;
 -- Get meals that still has available reservations
-Select SUM(number_of_guests) AS reserved,meal_id,Meal.title,max_reservations
-FROM Reservation 
-JOIN Meal On Meal.id= Reservation.meal_id
+-- Select SUM(number_of_guests) AS reserved,meal_id,Meal.title,max_reservations
+-- FROM Reservation 
+-- JOIN Meal On Meal.id= Reservation.meal_id
+SELECT sum(number_of_guests) AS reserved_guests ,meal_id, title, max_reservations
+FROM Reservation
+JOIN Meal on Reservation.meal_id = Meal.id
+GROUP BY meal_id
+having
+ reserved_guests < max_reservations;
 -- Where Reservation.reserved < Meal.max_reservations
 -- I tried to filter the result using the line above , but it did not worked
 GROUP BY meal_id;
@@ -247,7 +254,7 @@ SELECT Reservation.meal_id,Reservation.created_date,Reservation.number_of_guests
 FROM Reservation 
 JOIN Meal  ON Meal.id = Reservation.meal_id
 WHERE Meal.title LIKE '%tacos%' 
-ORDER BY created_date;
+ORDER BY Meal.created_date;
 -- Sort all meals by average number of stars in the reviews
 Select avg(stars) AS points,meal_id,Meal.title
 FROM Review 
