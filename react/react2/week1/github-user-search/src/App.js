@@ -11,24 +11,20 @@
  ListItems component display a list of result or  conditionally loading-error-no result, messages.
  */
 
-import './App.css';
-import {  GlobalProvider } from './GitSearchComps/GlobalState';
-import ListItems from './GitSearchComps/ListItems';
-import SearchComponent from './GitSearchComps/SearchComponent';
+import "./App.css";
+import { GlobalProvider } from "./GitSearchComps/GlobalState";
+import ListItems from "./GitSearchComps/ListItems";
+import SearchComponent from "./GitSearchComps/SearchComponent";
 
 function App() {
- 
   return (
-    <div >
+    <div>
       <GlobalProvider>
         <SearchComponent></SearchComponent>
         <ListItems></ListItems>
-    </GlobalProvider>
-      
+      </GlobalProvider>
     </div>
   );
 }
 
 export default App;
-
-

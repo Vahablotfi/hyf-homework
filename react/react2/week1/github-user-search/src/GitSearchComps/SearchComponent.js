@@ -4,20 +4,22 @@ this component call a function (searchUser), which has been passed to it from th
 and pass the input value to the function as argument. 
 */
 
-import { useContext } from "react"
-import React from 'react'
-import { GlobalContext } from "./GlobalState"
+import { useContext } from "react";
+import React from "react";
+import { GlobalContext } from "./GlobalState";
 
 function SearchComponent() {
-  
-    const { searchUser } = useContext(GlobalContext);
-    
+  const { searchUser } = useContext(GlobalContext);
+
   return (
-      <div>
-             <h1>Github user searcher</h1>
-      <input  placeholder="Search for user" onChange={(event)=>searchUser(event)} />
+    <div>
+      <h1>Github user searcher</h1>
+      <input
+        placeholder="Search for user"
+        onChange={(event) => searchUser(event)}
+      />
     </div>
-  )
+  );
 }
 
-export default SearchComponent
+export default SearchComponent;
