@@ -10,10 +10,10 @@
     <script>
 
 
-//Formal fullname
-    function getFullname(firstname, surname,useFormalName, gender){
-    const fullName1= firstname + " "+ surname;
-    if (firstname == "" || surname == ""){
+//Formal fullName
+    function getFullName(firstName, surname,useFormalName, gender){
+    const fullName1= firstName + " "+ surname;
+    if (firstName == "" || surname == ""){
         return "first name and last name can not be empty";
     }
     else if(useFormalName == true && gender == "male"){
@@ -25,22 +25,23 @@
     }
     return fullName1;
     }
-    let answer = getFullname("vahab","lotfi",true,"male");
+    let answer = getFullName("vahab","lotfi",true,"male");
     console.log(answer);
 
 
 //Event application
 const weekDaysArr = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-const dateToday = new Date();
-const theDay = dateToday.getDate();
 
-console.log(dateToday);
-console.log(theDay);
+
     function getEventWeekDay(num){
+        const dateToday = new Date();
+        const theDay = dateToday.getDay();
+        const today=weekDaysArr[theDay]
        const eventDay = weekDaysArr[num%7];
-       return eventDay;
+       const result=`Today is ${today} and event is going to be on ${num} days which is a ${eventDay}`
+       return result;
     }
-    console.log(getEventWeekDay(3));
+    console.log(getEventWeekDay(5));
 
     //Weather wear
 const summerOutfit = "shorts and T-shirts";
