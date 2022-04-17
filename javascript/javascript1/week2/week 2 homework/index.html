@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+//Formal fullName
+    function getFullName(firstName, surname,useFormalName, gender){
+    const fullName1= firstName + " "+ surname;
+    if (firstName == "" || surname == ""){
+        return "first name and last name can not be empty";
+    }
+    else if(useFormalName == true && gender == "male"){
+        let formalName = "Lord " + fullName1;
+        return formalName;
+    } else if (useFormalName == true && gender === "female"){
+        let femaleName = "Miss " + fullName1;
+        return femaleName;
+    }
+    return fullName1;
+    }
+    let answer = getFullName("vahab","lotfi",true,"male");
+    console.log(answer);
+
+
+//Event application
+const weekDaysArr = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+
+    function getEventWeekDay(num){
+        const dateToday = new Date();
+        const theDay = dateToday.getDay();
+        const today=weekDaysArr[theDay]
+       const eventDay = weekDaysArr[num%7];
+       const result=`Today is ${today} and event is going to be on ${num} days which is a ${eventDay}`
+       return result;
+    }
+    console.log(getEventWeekDay(5));
+
+    //Weather wear
+const summerOutfit = "shorts and T-shirts";
+const springOutfit = "Trousers and sweater";
+const winterOutfit = "Trousers-Jacket and Boots";
+
+function tellMeWhatToWear(temp){
+    if(temp<10){
+        return winterOutfit;
+    }else if(temp=10 && temp<20){
+        return springOutfit;
+    }else{
+        return summerOutfit;
+    }
+}
+console.log(tellMeWhatToWear(23));
+
+//Student manager
+
+
+const class07Students = [];
+function addStudentToClass(studentName) {
+  // You write code here
+for (i=0; i<=6; i++){
+    if(class07Students.length>=6 && studentName !== "Queen"){
+        if(class07Students.includes(studentName)){
+            console.log('student '+studentName+' is already in the class')
+        }else { 
+            console.log( "Cannot add more students to class 07")
+        } break
+    } return  class07Students.push(studentName);
+}
+
+}
+
+
+addStudentToClass("sara");
+addStudentToClass("Mohammad");
+addStudentToClass("ABDI");
+addStudentToClass("Sofie");
+addStudentToClass("Nikolaj");
+addStudentToClass("LUKAS");
+addStudentToClass("ANgela");
+addStudentToClass("LUKAS");
+addStudentToClass("Yasin");
+addStudentToClass("Queen");
+addStudentToClass("ABDI");
+addStudentToClass("Kevin");
+addStudentToClass("Maks");
+console.log(class07Students);
+
+
+
+function getNumberOfStudents(vName) {
+  // You write code here
+   return vName.length;
+}
+  console.log(getNumberOfStudents(class07Students));
+  
+       
+  </script>    
+</body>
+
+</html>
