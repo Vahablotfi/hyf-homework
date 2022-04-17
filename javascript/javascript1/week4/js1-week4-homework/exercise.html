@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+       //Fizz buzz 
+   function counter(m3num , m5num ){
+    for (i=1;i<=100;i++){
+            if(i% m3num === 0 && i% m5num === 0){
+                console.log("FizzBuzz");
+            }else if(i% m5num === 0){
+                console.log ("Buzz");
+            }else if(i% m3num === 0){
+                
+                console.log( "Fizz");
+            }else {
+                 console.log(i);
+            }
+        }
+   }
+ counter(4,12);
+///Build a sentiment analyzer
+
+// making two variables and initializing 
+ const positiveWord = ["happy","strong","energetic","fresh","amazing","awesome"];
+ const negativeWord = ["sad","bad","sick","blue","crying","lazy"];
+ // making function 
+  function getSentimentalScore(sentence){
+      // converting our sentence to an array of words
+       
+      const arrayOfTheWords = sentence.split(" ");
+      // craesting object with scores and pos/neg word
+
+      console.log(arrayOfTheWords)
+      let score=0;
+      let positives=[];
+      let negatives=[];
+      arrayOfTheWords.forEach(element => {
+          if(positiveWord.includes(element)){
+              positives.push(element)
+              ++score 
+          }else if(negativeWord.includes(element)){
+              negatives.push(element)
+              --score
+          }
+      })
+  
+  let result={
+      score:score,
+      positiveWords:positives,
+      negativeWords:negatives
+    }
+  
+  return console.log(result);}
+ getSentimentalScore(" i am happy to be sad and blue crying make me fresh and energetic.");
+
+    </script>
+</body>
+</html>
